@@ -3,17 +3,17 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using libreriaApp.Web.Models;
 
-namespace libreriaApp.Web.Models
+namespace libreriaApp.Web.Controllers
 {
-    public class publisherscontrolers : Controller
+    public class PublishersControlers : Controller
     {
         // GET: publisherscontrolers
         public ActionResult Index()
         {
-            List<publishersmodel> publisher = new List<publishersmodel>()
+            List<PublisherModel> publisher = new List<PublisherModel>()
 
             {
-                new publishersmodel 
+                new PublisherModel
                 { Id = 1,
                 Name = "Albert Whitman & Company",
                 City = "New York",
@@ -21,7 +21,7 @@ namespace libreriaApp.Web.Models
                 Country = "New York"
                 },
 
-                new publishersmodel
+                new PublisherModel
                 { Id = 1,
                 Name = "Bancroft Press",
                 City = "New York",
@@ -29,7 +29,7 @@ namespace libreriaApp.Web.Models
                 Country = "New York"
                 },
 
-                new publishersmodel
+                new PublisherModel
                 { Id = 1,
                 Name = "Regal House Publishing",
                 City = "New York",
